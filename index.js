@@ -8,7 +8,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
 const fontkit = require("fontkit"); 
-import path from "path";
+
 
 
 
@@ -20,11 +20,10 @@ const upload = multer({ dest: "uploads/" });
 
 const app = express();
 const port = 5000;
-const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "https://pdf-traslate.vercel.app",
+    origin: "https://pdf-traslate.vercel.app/",
     credentials: true,
   })
 )
